@@ -40,7 +40,7 @@ public class GoogleMainPage extends PageObject {
 
     public void openPage() {
 
-        getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
         getDriver().manage().window().maximize();
         getDriver().get("https://google.com");
 

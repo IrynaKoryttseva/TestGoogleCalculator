@@ -129,5 +129,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: com.thoughtworks.paranamer:paranamer:2.4" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.11" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:1.7.0" level="project" />
+    <orderEntry type="library" name="Maven: net.serenity-bdd:serenity-junit:1.1.14" level="project" />
   </component>
 </module>
