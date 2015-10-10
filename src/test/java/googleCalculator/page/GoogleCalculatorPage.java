@@ -4,19 +4,11 @@ import net.serenitybdd.core.pages.PageObject;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertTrue;
-
 
 /**
  * Created by Iryna on 07.10.2015.
  */
 public class GoogleCalculatorPage extends PageObject {
-   // WebDriver driver;
-   // public GoogleCalculatorPage(WebDriver driver){
-   //     this.driver=driver;
-    //}
     @FindBy(xpath = "//div[1]//ol/div[1]/div[1]")
     WebElement calculatorGoogle;
     @FindBy(xpath = "//ol//div[5]/div[4]/div/span")
@@ -56,146 +48,150 @@ public class GoogleCalculatorPage extends PageObject {
     WebElement buttonPoint;
     @FindBy(xpath = "//ol//div[3]//div[2]/span")
     public WebElement fieldResultCalculator;
-    @FindBy (xpath = "//*[@id=\"cwles\"]")
+    @FindBy(xpath = "//*[@id=\"cwles\"]")
     WebElement fieldAction;
-    @FindBy (xpath = "//*[@id=\"cwtltblr\"]")
+    @FindBy(xpath = "//*[@id=\"cwtltblr\"]")
     public WebElement fieldInputDate;
 
-   // public void contentOnPage() {
-    //    String pageTrue=getTitle();
-    //    assertThat(pageTrue, is("5+5 - Поиск в Google"));
-   // }
     public void trueGoogleCalculatorPage() {
-      if(calculatorGoogle.isDisplayed()){
-          System.out.println("Calculator is present");
-      }else{System.out.println("Not find element: calculatorGoogle");}
+        if (calculatorGoogle.isDisplayed()) {
+            System.out.println("Calculator is present");
+        } else {
+            System.out.println("Not find element: calculatorGoogle");
+        }
     }
-    public void clickFunctionAdd(){
-        if(buttonAdd.isDisplayed()){
+
+    public void clickFunctionAdd() {
+        if (buttonAdd.isDisplayed()) {
             buttonAdd.click();
-        }else{
+        } else {
             System.out.println("Not find element:buttonAdd");
         }
     }
-    public String checkContentFieldAction() {
-        String actionField = null;
-        if (fieldAction.isDisplayed()) {
-            actionField=fieldAction.getText();
-            System.out.println(actionField);
-        }else{
-            System.out.println("Not find element: fieldAction");
-        }
-        return actionField;
 
-    }
-    public void clickFunctionSubtract(){
-        if(buttonSubtract.isDisplayed()){
+    public void clickFunctionSubtract() {
+        if (buttonSubtract.isDisplayed()) {
             buttonSubtract.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonSubtract");
         }
     }
-    public void clickFunctionDivide(){
-        if(buttonDivide.isDisplayed()){
+
+    public void clickFunctionDivide() {
+        if (buttonDivide.isDisplayed()) {
             buttonDivide.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonDivide");
         }
     }
-    public void clickFunctionMultiply(){
-        if(buttonMultiply.isDisplayed()){
+
+    public void clickFunctionMultiply() {
+        if (buttonMultiply.isDisplayed()) {
             buttonMultiply.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonMultiply");
         }
     }
-    public void clickFunctionAc(){
-        if(buttonAc.isDisplayed()){
+
+    public void clickFunctionAc() {
+        if (buttonAc.isDisplayed()) {
             buttonAc.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonAc");
         }
     }
-    public void clickFunctionEqual(){
-        if(buttonEqual.isDisplayed()){
+
+    public void clickFunctionEqual() {
+        if (buttonEqual.isDisplayed()) {
             buttonEqual.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonEqual");
         }
     }
-    public void clickButtonZero(){
-        if(buttonZero.isDisplayed()){
+
+    public void clickButtonZero() {
+        if (buttonZero.isDisplayed()) {
             buttonZero.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonZero");
         }
     }
-    public void clickButtonOne(){
-        if(buttonOne.isDisplayed()){
+
+    public void clickButtonOne() {
+        if (buttonOne.isDisplayed()) {
             buttonOne.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonOne");
         }
     }
-    public void clickButtonTwo(){
-        if(buttonTwo.isDisplayed()){
+
+    public void clickButtonTwo() {
+        if (buttonTwo.isDisplayed()) {
             buttonTwo.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonTwo");
         }
     }
-    public void clickButtonThree(){
-        if(buttonThree.isDisplayed()){
+
+    public void clickButtonThree() {
+        if (buttonThree.isDisplayed()) {
             buttonThree.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonThree");
         }
     }
-    public void clickButtonFour(){
-        if(buttonFour.isDisplayed()){
+
+    public void clickButtonFour() {
+        if (buttonFour.isDisplayed()) {
             buttonFour.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonFour");
         }
     }
-    public void clickButtonFive(){
-        if(buttonFive.isDisplayed()){
+
+    public void clickButtonFive() {
+        if (buttonFive.isDisplayed()) {
             buttonFive.click();
-        }else{
+        } else {
             System.out.println("Not find element: buttonFive");
         }
     }
-    public void clickButtonSix(){
-        if(buttonSix.isDisplayed()){
+
+    public void clickButtonSix() {
+        if (buttonSix.isDisplayed()) {
             buttonSix.click();
         }
     }
-    public void clickButtonSeven(){
-        if(buttonSeven.isDisplayed()){
+
+    public void clickButtonSeven() {
+        if (buttonSeven.isDisplayed()) {
             buttonSeven.click();
         }
     }
-    public void clickButtonEight(){
-        if(buttonEight.isDisplayed()){
+
+    public void clickButtonEight() {
+        if (buttonEight.isDisplayed()) {
             buttonEight.click();
         }
     }
-    public void clickButtonNine(){
-        if(buttonNine.isDisplayed()){
+
+    public void clickButtonNine() {
+        if (buttonNine.isDisplayed()) {
             buttonNine.click();
         }
     }
-    public void clickButtonPoint(){
-        if(buttonPoint.isDisplayed()){
+
+    public void clickButtonPoint() {
+        if (buttonPoint.isDisplayed()) {
             buttonPoint.click();
         }
     }
+
     public String resultFunctionCalculator() {
         String actualResult = "";
         if (fieldResultCalculator.isDisplayed()) {
             actualResult = fieldResultCalculator.getText();
         }
-
         return actualResult;
     }
 }
